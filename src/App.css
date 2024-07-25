@@ -1,0 +1,101 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  /* text-align: center; */
+}
+/* personal chat */
+.bubble-chat {
+  background: #ccccff;
+  padding-bottom: 10px;
+}
+
+.listChat {
+  list-style-type: none;
+  padding: 0;
+}
+
+.card {
+  border-radius: 50px;
+}
+
+/* input text */
+.input {
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.input-text {
+  border-radius: 30px;
+  padding: 5px;
+  width: 75%;
+  height: 45px;
+  margin-right: 5px;
+}
+
+.btn-send {
+  border-radius: 30px;
+  height: 45px;
+}
+
+.home {
+  background: #6495ed;
+  border-radius: 10px;
+}
+
+.chats {
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.name-customer {
+  padding-top: 10px;
+  background: #ccccff;
+  border-radius: 0 10px 10px 0;
+}
+
+/* Responsive design */
+@media (min-width: 768px) {
+  .name-customer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 767px) {
+  .chats {
+    display: none; /* Hide the chats column on small screens */
+  }
+
+  .name-customer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    /* align-items: center; */
+  }
+
+  .name-customer h4 {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+  }
+
+  .back-button {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+}
+
+.head-name {
+  display: flex;
+  gap: 5px;
+}
+
+.head-name button {
+  border: none;
+  background: none;
+  font-size: 20px;
+  padding: 0;
+}
